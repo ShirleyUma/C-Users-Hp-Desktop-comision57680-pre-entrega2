@@ -5,30 +5,41 @@
 }
 
 /*INDEX*/
+
+body{
+    background-image: linear-gradient( #6f4e37, #916e53, #b59071, #d9b390, #fed8b1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .header{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 .titulo-sitio{
     width: 100%;
     margin-left: 1.25rem;
-    font-size: 400%;
-    background-color: rgba(128, 128, 128, 0.18);
+    font-size: 6.25rem;
     display: flex;
 }
 
-/*navegador*/
-
+/*NAVEGADOR*/
 .navbar{
     width: 100%;
     font-size: x-large;
-    background-color: rgba(128, 128, 128, 0.062);
     display: flex;
     justify-content: flex-end;
     padding: 1.25rem;
     top: 0;
     gap: 1.25rem;
     
+}
+
+.navbar li:hover{
+    transform: scale(1.2);
+    transition: all 3000ms cubic-bezier(.07,.96,.92,.09) ;
 }
 
 ul{
@@ -64,9 +75,15 @@ ul li a{
 
 .container{
     padding: 3.125rem;
+    
 }
 
-h3{
+.container img:hover{
+    transform: scale(1.10);
+    transition: all 3000ms cubic-bezier(.07,.96,.92,.09) ;
+}
+
+.segundo-titulo-index{
     width: 100%;
     height: 3.125rem;
     padding: 3.125rem;
@@ -74,7 +91,18 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: 3.75rem;
+}
+
+h4{
+    font-size: 1.875rem;
+    text-align: center;
+    transition: all 3000ms cubic-bezier(.07,.96,.92,.09) ;
+}
+
+h4:hover{
+    transform: scale(1.20);
+    filter: drop-shadow(2px 2px 2px rgb(125, 125, 125));
 }
 
 .malbec{
@@ -144,6 +172,7 @@ img{
     grid-template-rows: repeat(3,1fr);
     gap: 1.25rem;
     background-color:rgb(209, 187, 158);
+    text-align: right;
 }
 
 .img-cabernet{
@@ -241,9 +270,54 @@ img{
     grid-row: 3/4;
 }*/
 
-/*nosotros*/
+/*pie de pagina*/
+
+footer{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 80px 0;
+}
+.pie-de-pagina{
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-list{
+    width: 30%;
+    padding: 0 10px;
+    
+}
+
+.footer-list h5{
+    font-size: 1.25rem;
+    color: #6f4e37;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.redes-sociales{
+    width: 68%;
+    top: 50px;
+    gap: 1.25rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.whats{
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+
+/*NOSOTROS*/
 .sobre-nosotros{
-    background-color: brown;
+    background-color: rgba(247, 207, 151, 0.604);
     text-align: justify;/*ajusta el texto a toda la pagina*/
     text-indent: .625rem;/*sangria*/
 }
@@ -255,17 +329,405 @@ img{
 }
 
 
-/*pie de pagina*/
-.whats{
-    position: fixed;
-    bottom: 1.25rem;
-    right: 1.25rem;
+
+
+
+    /*BODEGAS*/
+
+    h3{
+        font-size: 500%;
+        text-align: center;
+        -webkit-animation: h3 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: h3 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+@-webkit-keyframes h3 {
+    0% {
+    letter-spacing: 1em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    letter-spacing: normal;
+    opacity: 1;
+    }
+}
+@keyframes h3 {
+    0% {
+    letter-spacing: 1em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    letter-spacing: normal;
+    opacity: 1;
+    }
+}
+
+    .putruelle-font{
+        color: rgb(145, 144, 144);
+    }
+    
+    .fondo-bodega-norton{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/viniedos.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-catena-zapata{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-catena-zapata.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-alamos{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-alamos.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-crotta{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodegas-crotta.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-cuesta-del-madero{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-cuesta-del-madero.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-garbin-estate{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodegas-garbin-estate.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-pacheco-pereda{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-pacheco-pereda.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-putruelle{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-putruelle.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-reserva-de-los-andes{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-reserva-de-los-andes.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-santa-julia{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega-santa-julia.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .fondo-bodega-trivento{
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/img-bodega.trivento.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .container-card{
+        width: 15.625rem;
+        height: 31.25rem;
+        border: solid grey;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .container-card div{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .container-card div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .productos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .container-card .desborda{
+        object-fit: contain;
+    }
+
+/*UBICACION*/
+.ubicacion{
+    background-image: url(../assets/img/fondo-ubicacion.jpg);
+    background-repeat: none;
+    background-position:center;
+    background-size: cover;
+}
+
+.tituloUbicacion{
+    font-size: 4.6875rem;
+    color: rgba(160, 130, 83, 0.993);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    -webkit-animation: maps 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: maps 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.modificado-ubicacion{
+    color: white;
+}
+
+@-webkit-keyframes maps {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+@keyframes maps {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+
+/*CONTACTO*/
+.lineal{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( #6f4e37, #916e53, #b59071, #d9b390, #fed8b1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 
 
-/*media queries*/
+/*MEDIA QUERIES*/
+@media (max-width:1135px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 50px;
+    }
+
+    .img-merlot{
+        width: 100%;
+        display: flex;
+    }
+
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .fondo-bodega-norton{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:1024px){
+    .fondo-bodega-norton{
+        width: auto;
+        height: auto;
+    }
+    .desborda{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:975px){
+    .titulo-sitio{
+        font-size: 60px;
+    }
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 40px;
+    }
+    .redireccionando-elementos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h3{
+        font-size: 300%;
+    }
+
+    .whats img{
+        position: relative;
+        bottom: .625rem;
+        right: .625rem;
+    }
+    .malbec{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+        background-color: rgb(167, 146, 119);
+    }
+    
+    .img-malbec{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+    }
+    .cabernet{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+        background-color:rgb(209, 187, 158);
+    }
+    
+    .img-cabernet{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+    }
+    .merlot{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+        background-color: rgb(234, 216, 192);
+    }
+    
+    .img-merlot{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:895px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .titulo-sitio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 40px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:824px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 35px;
+    }
+}
+
+@media (max-width:771px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 30px;
+    }
+}
+
 @media (max-width:768px){
     .titulo-sitio{
         display: flex;
@@ -280,6 +742,27 @@ img{
         align-items: center;
         width: 100%;
         background-color: rgba(128, 128, 128, 0);
+        text-align: center;
+    }
+
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 25px;
+    }
+
+
+    .presentacion{
+        width: 100%;
+        height: 150px;
+        padding: 0;
+        font-size: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 50px;
     }
 
     .malbec{
@@ -296,7 +779,6 @@ img{
         height: 400px;
         padding: 1.875rem;
         }
-    }
 
     .whats img{
         display: flex;
@@ -304,13 +786,101 @@ img{
         right: 1.25rem;
     }
 
-    @media(max-width: 375px){
+    .fondo-bodega-trivento{
+        width: auto;
+        height: auto;
+    }
+    .fondo-bodega-putruelle{
+        width: auto;
+        height: auto;
+    }
+    .fondo-bodega-garbin-estate{
+        width: auto;
+        height: auto;
+    }
+}
 
+@media(max-width: 765px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 35px;
+    }
+}
+@media(max-width: 735px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 30px;
+    }
+}
+@media(max-width: 735px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 30px;
+    }
+}
+@media(max-width: 680px){
+    .segundo-titulo-index{
+        display: flex;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 550px){
+    .navbar{
+        display: block;
+        gap: .3125rem;
+    }
+    h3{
+        font-size: 200%;
+    }
+
+}
+
+    @media(max-width: 535px){
+        .segundo-titulo-index{
+            display: flex;
+            font-size: 40px;
+        }
+        .navbar li{
+            display:flex;
+            flex-direction: column;
+            margin: auto;
+            padding: auto;
+        }
+        }
+
+    @media(max-width: 522px){
+        .segundo-titulo-index{
+            display: flex;
+            font-size: 30px;
+        }
+    }
+
+    @media(max-width: 442px){
+        .segundo-titulo-index{
+            display: flex;
+            font-size: 25px;
+        }
         .presentacion{
-            width: 250%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            
+        }
+        h3{
+            font-size: 100%;
+        }
+    }
+
+    @media(max-width: 375px){
+        .segundo-titulo-index{
+            display: flex;
+            font-size: 20px;
+        }
+
+        .presentacion{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .container{
@@ -325,7 +895,4 @@ img{
             right: 1.25rem;
         }
     }
-
-
-
 
